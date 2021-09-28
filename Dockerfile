@@ -1,4 +1,6 @@
-FROM alepez/esp-idf:4.3-beta3
+ARG ESP_IDF_VERSION
+
+FROM alepez/esp-idf:${ESP_IDF_VERSION}
 
 USER root
 RUN apt-get update -qqy && \
