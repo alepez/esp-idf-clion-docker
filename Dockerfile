@@ -1,6 +1,6 @@
-ARG ESP_IDF_VERSION
+ARG ALEPEZ_ESP_IDF_DOCKER_VERSION
 
-FROM alepez/esp-idf:${ESP_IDF_VERSION}
+FROM alepez/esp-idf:${ALEPEZ_ESP_IDF_DOCKER_VERSION}
 
 USER root
 RUN apt-get update -qqy && \
